@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddit Strategist & Brand Consultant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Razorpay SDK -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">r/<span>strategist</span></a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#audit">Free Audit</a></li>
+        <li><a href="#book" class="btn btn--sm">Book a Call</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#audit">Free Audit</a>
+      <a href="#book" class="btn">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="container">
+      <div class="hero__layout">
+        <div class="hero__text">
+          <div class="hero__badge">Reddit Strategy &amp; Brand Consulting</div>
+          <h1 class="hero__headline">
+            Build a Trust-First Presence on the Internet's Most
+            <span class="accent">Skeptical Platform.</span>
+          </h1>
+          <p class="hero__sub">
+            I help founders and creators turn Reddit visibility into inbound leads — through storytelling, smart positioning, and community-native strategy. No ads. No cringe. Just authentic growth.
+          </p>
+          <div class="hero__ctas">
+            <a href="#book" class="btn btn--primary btn--lg">Book a Strategy Session</a>
+            <a href="#work" class="btn btn--ghost btn--lg">See Case Studies</a>
+          </div>
+          <div class="hero__trust">
+            <div class="trust-item">
+              <span class="trust-item__num">50+</span>
+              <span class="trust-item__label">Brands Grown</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-item__num">200K+</span>
+              <span class="trust-item__label">Organic Impressions</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-item__num">3x</span>
+              <span class="trust-item__label">Avg. Inbound Lead Lift</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image-wrap">
+          <div class="hero__image-glow"></div>
+          <img
+            src="hero.jpg"
+            alt="Reddit Strategist & Brand Consultant"
+            class="hero__image"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hero__image-fallback">
+            <span>RS</span>
+            <p>Add your photo as <strong>hero.jpg</strong></p>
+          </div>
+          <div class="hero__image-badge">
+            <span>🔥</span>
+            <div>
+              <strong>Top Reddit Strategist</strong>
+              <small>100K+ Karma</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF TICKER -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>🔥 Top post in r/Entrepreneur — 2.4K upvotes</span>
+      <span>⚡ SaaS founder hit front page of r/startups</span>
+      <span>💬 "Best Reddit strategy I've ever seen" — YC Founder</span>
+      <span>📈 3 clients got inbound DMs within 48hrs of posting</span>
+      <span>🏆 Karma 100K+ across managed accounts</span>
+      <span>🔥 Top post in r/Entrepreneur — 2.4K upvotes</span>
+      <span>⚡ SaaS founder hit front page of r/startups</span>
+      <span>💬 "Best Reddit strategy I've ever seen" — YC Founder</span>
+      <span>📈 3 clients got inbound DMs within 48hrs of posting</span>
+      <span>🏆 Karma 100K+ across managed accounts</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about__grid">
+      <div class="about__visual">
+        <div class="about__card">
+          <div class="about__avatar">
+            <div class="avatar-placeholder">RS</div>
+          </div>
+          <div class="about__karma">
+            <div class="karma-row">
+              <span class="karma-label">Post Karma</span>
+              <span class="karma-val accent">124,500</span>
+            </div>
+            <div class="karma-row">
+              <span class="karma-label">Comment Karma</span>
+              <span class="karma-val accent">87,200</span>
+            </div>
+            <div class="karma-row">
+              <span class="karma-label">Subreddits Mastered</span>
+              <span class="karma-val accent">40+</span>
+            </div>
+          </div>
+          <div class="about__tag">Verified Reddit Power User</div>
+        </div>
+      </div>
+      <div class="about__content">
+        <p class="section__eyebrow">About Me</p>
+        <h2 class="section__title">From Digital Marketer to <span class="accent">Reddit Storyteller.</span></h2>
+        <p>I spent years running paid ads, writing LinkedIn posts, and watching engagement flatline. Then I discovered Reddit — a platform where the community calls out every fake, every pitch, every piece of corporate fluff.</p>
+        <p>So I learned to speak Reddit. And it changed everything.</p>
+        <p>Now I help founders and personal brands do the same — build real credibility in communities that actually matter, without sounding like a press release.</p>
+        <div class="philosophy-box">
+          <span class="philosophy-box__icon">💡</span>
+          <p><strong>My philosophy:</strong> Strategy that feels natural — not forced. The best marketing on Reddit doesn't look like marketing at all.</p>
+        </div>
+        <a href="#book" class="btn btn--primary">Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--dark" id="services">
+    <div class="container">
+      <p class="section__eyebrow center">What I Do</p>
+      <h2 class="section__title center">Services Built for <span class="accent">Reddit-Native Growth</span></h2>
+      <p class="section__desc center">No vanity metrics. No bot farms. Just high-value engagement that converts lurkers into leads.</p>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">📍</div>
+          <h3>Reddit Growth Strategy</h3>
+          <p>Subreddit selection, hook writing, and posting cadence — all mapped to your audience's psychology. We find where your people live and show up there first.</p>
+          <ul class="service-card__list">
+            <li>Subreddit research &amp; mapping</li>
+            <li>Hook &amp; title frameworks</li>
+            <li>Posting schedule &amp; timing</li>
+            <li>Upvote velocity tactics</li>
+          </ul>
+          <a href="#book" class="btn btn--outline">Get Started</a>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Most Popular</div>
+          <div class="service-card__icon">🎯</div>
+          <h3>Brand Positioning</h3>
+          <p>Narrative-driven posts that position you as the go-to expert — without ever saying "I'm an expert." We craft your story so the community does the selling for you.</p>
+          <ul class="service-card__list">
+            <li>Personal brand narrative</li>
+            <li>Story-first post templates</li>
+            <li>Comment strategy for authority</li>
+            <li>Cross-platform positioning</li>
+          </ul>
+          <a href="#book" class="btn btn--primary">Get Started</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">🔍</div>
+          <h3>Community Audits</h3>
+          <p>Getting posts removed? Shadowbanned? I audit your Reddit presence, diagnose the issues, and give you a clear fix-it roadmap — fast.</p>
+          <ul class="service-card__list">
+            <li>Post removal analysis</li>
+            <li>Shadowban detection</li>
+            <li>Subreddit rule compliance</li>
+            <li>Account health report</li>
+          </ul>
+          <a href="#book" class="btn btn--outline">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="section" id="work">
+    <div class="container">
+      <p class="section__eyebrow center">Case Studies</p>
+      <h2 class="section__title center">Real Results. <span class="accent">Real Communities.</span></h2>
+      <p class="section__desc center">Authenticity over ads. Here's what happens when strategy meets storytelling.</p>
+
+      <!-- SLIDER -->
+      <div class="cases-slider">
+        <div class="cases-slider__track" id="sliderTrack">
+
+          <div class="case-card" data-case="0" role="button" tabindex="0" aria-label="View case study">
+            <div class="case-card__meta">
+              <span class="case-card__sub">r/Entrepreneur</span>
+              <span class="case-card__type">SaaS Founder</span>
+            </div>
+            <h3>Grew SaaS Founder to Top of r/Entrepreneur</h3>
+            <p>Repositioned a B2B SaaS founder's story from "product pitch" to "founder journey." Result: front-page post, 2.4K upvotes, 14 inbound demo requests in 72 hours.</p>
+            <div class="case-card__stats">
+              <div class="stat"><span class="stat__num accent">2.4K</span><span class="stat__label">Upvotes</span></div>
+              <div class="stat"><span class="stat__num accent">14</span><span class="stat__label">Inbound Leads</span></div>
+              <div class="stat"><span class="stat__num accent">72h</span><span class="stat__label">Turnaround</span></div>
+            </div>
+            <span class="case-card__cta">View Case Study →</span>
+          </div>
+
+          <div class="case-card" data-case="1" role="button" tabindex="0" aria-label="View case study">
+            <div class="case-card__meta">
+              <span class="case-card__sub">r/startups + r/SaaS</span>
+              <span class="case-card__type">Solo Founder</span>
+            </div>
+            <h3>Increased Inbound Leads via Niche Subreddits</h3>
+            <p>Identified 6 underserved subreddits for a solo founder's dev tool. Built a 30-day content calendar. Organic traffic up 340% — zero ad spend.</p>
+            <div class="case-card__stats">
+              <div class="stat"><span class="stat__num accent">340%</span><span class="stat__label">Traffic Lift</span></div>
+              <div class="stat"><span class="stat__num accent">6</span><span class="stat__label">New Subreddits</span></div>
+              <div class="stat"><span class="stat__num accent">$0</span><span class="stat__label">Ad Spend</span></div>
+            </div>
+            <span class="case-card__cta">View Case Study →</span>
+          </div>
+
+          <div class="case-card" data-case="2" role="button" tabindex="0" aria-label="View case study">
+            <div class="case-card__meta">
+              <span class="case-card__sub">r/personalfinance</span>
+              <span class="case-card__type">Fintech Brand</span>
+            </div>
+            <h3>Turned Community Audit into Brand Credibility</h3>
+            <p>Client had 3 posts removed in a week. Full audit revealed tone mismatch and rule violations. Rebuilt their voice — next 5 posts all approved, one hit 1.1K upvotes.</p>
+            <div class="case-card__stats">
+              <div class="stat"><span class="stat__num accent">1.1K</span><span class="stat__label">Upvotes</span></div>
+              <div class="stat"><span class="stat__num accent">5/5</span><span class="stat__label">Posts Approved</span></div>
+              <div class="stat"><span class="stat__num accent">0</span><span class="stat__label">Removals After</span></div>
+            </div>
+            <span class="case-card__cta">View Case Study →</span>
+          </div>
+
+          <div class="case-card" data-case="3" role="button" tabindex="0" aria-label="View case study">
+            <div class="case-card__meta">
+              <span class="case-card__sub">r/marketing + r/agency</span>
+              <span class="case-card__type">Agency Owner</span>
+            </div>
+            <h3>Built Thought Leadership for Agency Owner</h3>
+            <p>Crafted a 90-day comment + post strategy for an agency owner. Grew from 0 to 12K karma, landed 3 retainer clients directly from Reddit DMs.</p>
+            <div class="case-card__stats">
+              <div class="stat"><span class="stat__num accent">12K</span><span class="stat__label">Karma Gained</span></div>
+              <div class="stat"><span class="stat__num accent">3</span><span class="stat__label">Retainer Clients</span></div>
+              <div class="stat"><span class="stat__num accent">90</span><span class="stat__label">Day Sprint</span></div>
+            </div>
+            <span class="case-card__cta">View Case Study →</span>
+          </div>
+
+        </div><!-- /track -->
+
+        <!-- Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn" id="sliderPrev" aria-label="Previous">&#8592;</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="sliderNext" aria-label="Next">&#8594;</button>
+        </div>
+
+      </div><!-- /slider -->
+    </div>
+  </section>
+
+  <!-- CASE STUDY MODAL -->
+  <div class="modal-overlay" id="caseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal__close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal__header">
+        <div class="modal__meta">
+          <span class="case-card__sub" id="modalSub"></span>
+          <span class="case-card__type" id="modalType"></span>
+        </div>
+        <h2 class="modal__title" id="modalTitle"></h2>
+      </div>
+      <div class="modal__body">
+        <div class="modal__stats" id="modalStats"></div>
+        <div class="modal__section">
+          <h4>The Challenge</h4>
+          <p id="modalChallenge"></p>
+        </div>
+        <div class="modal__section">
+          <h4>The Strategy</h4>
+          <p id="modalStrategy"></p>
+        </div>
+        <div class="modal__section">
+          <h4>The Result</h4>
+          <p id="modalResult"></p>
+        </div>
+        <div class="modal__tags" id="modalTags"></div>
+      </div>
+      <div class="modal__footer">
+        <a href="#book" class="btn btn--primary" id="modalCta">Get Similar Results</a>
+        <button class="btn btn--ghost" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--dark" id="testimonials">
+    <div class="container">
+      <p class="section__eyebrow center">Testimonials</p>
+      <h2 class="section__title center">What Clients <span class="accent">Actually Say.</span></h2>
+      <p class="section__desc center">No polished PR quotes. Just real screenshots from real people.</p>
+
+      <div class="testi-slider">
+        <div class="testi-track" id="testiTrack">
+
+          <!-- CARD 1 — Reddit DM -->
+          <div class="testi-card">
+            <div class="testi-card__img-wrap">
+              <div class="demo-ss demo-ss--reddit">
+                <div class="demo-ss__bar"><span class="demo-ss__dot r"></span><span class="demo-ss__dot y"></span><span class="demo-ss__dot g"></span><span class="demo-ss__title">Reddit — Direct Message</span></div>
+                <div class="demo-ss__body">
+                  <div class="demo-ss__msg demo-ss__msg--them"><div class="demo-ss__avatar" style="background:#FF4500">SJ</div><div class="demo-ss__bubble"><p>Hey! Just wanted to say your Reddit strategy completely changed how I approach content. Got 3 inbound leads this week alone from r/startups.</p><span class="demo-ss__time">2 days ago</span></div></div>
+                  <div class="demo-ss__msg demo-ss__msg--them"><div class="demo-ss__avatar" style="background:#FF4500">SJ</div><div class="demo-ss__bubble"><p>Honestly the best investment I made for my SaaS. The hook framework alone is worth 10x what I paid.</p><span class="demo-ss__time">2 days ago</span></div></div>
+                  <div class="demo-ss__upvote"><span>⬆ 847</span><span class="demo-ss__sub">u/saas_founder_jay</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 — Twitter/X DM style -->
+          <div class="testi-card">
+            <div class="testi-card__img-wrap">
+              <div class="demo-ss demo-ss--twitter">
+                <div class="demo-ss__bar"><span class="demo-ss__dot r"></span><span class="demo-ss__dot y"></span><span class="demo-ss__dot g"></span><span class="demo-ss__title">Messages</span></div>
+                <div class="demo-ss__body">
+                  <div class="demo-ss__profile-row"><div class="demo-ss__avatar" style="background:#1d9bf0">MK</div><div><strong>Meera K.</strong><span class="demo-ss__handle">@meerabuilds</span></div></div>
+                  <div class="demo-ss__tweet-msg"><p>"Went from 0 karma to front page of r/Entrepreneur in 6 weeks. The subreddit mapping strategy is insane. My post got 2.1K upvotes and I woke up to 11 demo requests."</p><span class="demo-ss__time">March 12, 2026</span></div>
+                  <div class="demo-ss__tweet-stats"><span>❤️ 142</span><span>🔁 38</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 — Reddit comment -->
+          <div class="testi-card">
+            <div class="testi-card__img-wrap">
+              <div class="demo-ss demo-ss--reddit">
+                <div class="demo-ss__bar"><span class="demo-ss__dot r"></span><span class="demo-ss__dot y"></span><span class="demo-ss__dot g"></span><span class="demo-ss__title">r/Entrepreneur — Comment</span></div>
+                <div class="demo-ss__body">
+                  <div class="demo-ss__comment">
+                    <div class="demo-ss__comment-header"><div class="demo-ss__avatar demo-ss__avatar--sm" style="background:#7c3aed">RP</div><span class="demo-ss__handle">u/ravi_product</span><span class="demo-ss__time">· 5 days ago</span></div>
+                    <p class="demo-ss__comment-text">I hired her for a community audit after getting 4 posts removed. She identified exactly what was triggering the mods and rebuilt our entire posting voice. Next 6 posts — all approved. One hit 900 upvotes. Genuinely shocked.</p>
+                    <div class="demo-ss__comment-actions"><span>⬆ 312</span><span>💬 Reply</span><span>🏆 Award</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 — LinkedIn message -->
+          <div class="testi-card">
+            <div class="testi-card__img-wrap">
+              <div class="demo-ss demo-ss--linkedin">
+                <div class="demo-ss__bar"><span class="demo-ss__dot r"></span><span class="demo-ss__dot y"></span><span class="demo-ss__dot g"></span><span class="demo-ss__title">LinkedIn — Messaging</span></div>
+                <div class="demo-ss__body">
+                  <div class="demo-ss__profile-row"><div class="demo-ss__avatar" style="background:#0077b5">AT</div><div><strong>Alex T.</strong><span class="demo-ss__handle">Founder @ DevFlow</span></div></div>
+                  <div class="demo-ss__msg demo-ss__msg--them" style="margin-top:12px"><div class="demo-ss__bubble demo-ss__bubble--li"><p>The 90-day Reddit strategy you built for us generated more qualified leads than our entire LinkedIn presence. We closed 2 enterprise deals from Reddit DMs. Unreal ROI.</p><span class="demo-ss__time">Feb 28, 2026</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 — Reddit DM 2 -->
+          <div class="testi-card">
+            <div class="testi-card__img-wrap">
+              <div class="demo-ss demo-ss--reddit">
+                <div class="demo-ss__bar"><span class="demo-ss__dot r"></span><span class="demo-ss__dot y"></span><span class="demo-ss__dot g"></span><span class="demo-ss__title">Reddit — Direct Message</span></div>
+                <div class="demo-ss__body">
+                  <div class="demo-ss__msg demo-ss__msg--them"><div class="demo-ss__avatar" style="background:#16a34a">NP</div><div class="demo-ss__bubble"><p>I was skeptical Reddit could work for B2B. You proved me completely wrong. 340% traffic increase in 30 days, zero ad spend. My investors are asking how I did it 😂</p><span class="demo-ss__time">1 week ago</span></div></div>
+                  <div class="demo-ss__msg demo-ss__msg--them"><div class="demo-ss__avatar" style="background:#16a34a">NP</div><div class="demo-ss__bubble"><p>The niche subreddit research alone was worth every penny. Found communities I didn't even know existed.</p><span class="demo-ss__time">1 week ago</span></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 — Google review style -->
+          <div class="testi-card">
+            <div class="testi-card__img-wrap">
+              <div class="demo-ss demo-ss--google">
+                <div class="demo-ss__bar"><span class="demo-ss__dot r"></span><span class="demo-ss__dot y"></span><span class="demo-ss__dot g"></span><span class="demo-ss__title">Google Review</span></div>
+                <div class="demo-ss__body">
+                  <div class="demo-ss__profile-row"><div class="demo-ss__avatar" style="background:#ea4335">PS</div><div><strong>Priya S.</strong><span class="demo-ss__handle">Fintech Founder</span></div></div>
+                  <div class="demo-ss__stars">★★★★★</div>
+                  <p class="demo-ss__review-text">"After 3 post removals in one week I thought Reddit just wasn't for us. The community audit changed everything. She identified the exact tone issues, rebuilt our voice, and our next post hit 1.1K upvotes. Now Reddit is our #1 inbound channel."</p>
+                  <span class="demo-ss__time">March 2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /track -->
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="testiPrev" aria-label="Previous testimonial">&#8592;</button>
+          <div class="slider-dots" id="testiDots"></div>
+          <button class="slider-btn" id="testiNext" aria-label="Next testimonial">&#8594;</button>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="testi-lightbox" id="testiLightbox" role="dialog" aria-modal="true" aria-label="Testimonial screenshot">
+        <button class="testi-lightbox__close" id="testiLbClose" aria-label="Close">&times;</button>
+        <button class="testi-lightbox__nav testi-lightbox__nav--prev" id="testiLbPrev" aria-label="Previous">&#8592;</button>
+        <img src="" alt="Testimonial" class="testi-lightbox__img" id="testiLbImg" />
+        <button class="testi-lightbox__nav testi-lightbox__nav--next" id="testiLbNext" aria-label="Next">&#8594;</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FREE AUDIT LEAD MAGNET -->
+  <section class="section section--dark" id="audit">
+    <div class="container">
+      <div class="audit__wrapper">
+        <div class="audit__content">
+          <p class="section__eyebrow">Free Lead Magnet</p>
+          <h2 class="section__title">Get a Free <span class="accent">Reddit Profile Audit</span></h2>
+          <p>Submit your Reddit username and I'll personally review your profile and send back one actionable tip to improve your presence. No pitch. No strings. Just value.</p>
+          <ul class="audit__perks">
+            <li>✅ Subreddit fit analysis</li>
+            <li>✅ Post history review</li>
+            <li>✅ One quick-win recommendation</li>
+            <li>✅ Delivered within 48 hours</li>
+          </ul>
+        </div>
+        <form class="audit__form" id="auditForm">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+          <input type="hidden" name="subject" value="Reddit Audit Request" />
+          <input type="hidden" name="from_name" value="Reddit Strategist Site" />
+          <div class="form-group">
+            <label for="auditName">Your Name</label>
+            <input type="text" id="auditName" name="name" placeholder="[Your Name]" required />
+          </div>
+          <div class="form-group">
+            <label for="auditEmail">Email Address</label>
+            <input type="email" id="auditEmail" name="email" placeholder="[your@email.com]" required />
+          </div>
+          <div class="form-group">
+            <label for="auditUsername">Reddit Username</label>
+            <input type="text" id="auditUsername" name="username" placeholder="u/yourusername" required />
+          </div>
+          <div class="form-group">
+            <label for="auditGoal">What's your main goal on Reddit?</label>
+            <select id="auditGoal" name="goal">
+              <option value="">Select a goal...</option>
+              <option value="leads">Generate inbound leads</option>
+              <option value="brand">Build personal brand</option>
+              <option value="traffic">Drive website traffic</option>
+              <option value="community">Grow a community</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send My Free Audit Request</button>
+          <p class="form-note">No spam. Audit delivered within 48 hours.</p>
+          <div class="form-msg" id="auditMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section" id="book">
+    <div class="container">
+      <p class="section__eyebrow center">Book a Session</p>
+      <h2 class="section__title center">Let's Talk <span class="accent">Reddit Strategy.</span></h2>
+      <p class="section__desc center">Pick a session, choose a date and time, fill in your details — done. No third-party tools.</p>
+
+      <div class="booking-flow" id="bookingFlow">
+
+        <!-- STEP INDICATOR -->
+        <div class="booking-steps">
+          <div class="booking-step active" data-step="1"><span>1</span> Session</div>
+          <div class="booking-step-line"></div>
+          <div class="booking-step" data-step="2"><span>2</span> Date &amp; Time</div>
+          <div class="booking-step-line"></div>
+          <div class="booking-step" data-step="3"><span>3</span> Your Details</div>
+          <div class="booking-step-line"></div>
+          <div class="booking-step" data-step="4"><span>4</span> Confirm</div>
+          <div class="booking-step-line booking-step-line--hidden" id="payStepLine"></div>
+          <div class="booking-step booking-step--hidden" data-step="5" id="payStep"><span>5</span> Payment</div>
+        </div>
+
+        <!-- STEP 1: SESSION TYPE -->
+        <div class="booking-panel active" id="bStep1">
+          <div class="booking__options">
+            <div class="booking-card" data-session="coffee" tabindex="0" role="button">
+              <div class="booking-card__icon">☕</div>
+              <h3>20-Min Coffee Chat</h3>
+              <p>Quick intro call. We'll assess your Reddit presence and identify your biggest opportunity.</p>
+              <div class="booking-card__meta">
+                <span>⏱ 20 minutes</span>
+                <span>💰 Free</span>
+                <span>📹 Video Call</span>
+              </div>
+            </div>
+            <div class="booking-card booking-card--featured" data-session="strategy" tabindex="0" role="button">
+              <div class="booking-card__badge">Recommended</div>
+              <div class="booking-card__icon">🚀</div>
+              <h3>Deep Dive Strategy Session</h3>
+              <p>60-minute intensive. Full Reddit strategy — subreddit map, content pillars, hook frameworks, 30-day plan.</p>
+              <div class="booking-card__meta">
+                <span>⏱ 45 minutes</span>
+                <span>💰 Paid</span>
+                <span>📹 Video Call</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: DATE & TIME -->
+        <div class="booking-panel" id="bStep2">
+          <div class="booking-datetime">
+            <div class="booking-calendar">
+              <div class="cal-header">
+                <button class="cal-nav" id="calPrev" aria-label="Previous month">&#8249;</button>
+                <span class="cal-month-label" id="calMonthLabel"></span>
+                <button class="cal-nav" id="calNext" aria-label="Next month">&#8250;</button>
+              </div>
+              <div class="cal-weekdays">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+              </div>
+              <div class="cal-grid" id="calGrid"></div>
+            </div>
+            <div class="booking-times">
+              <p class="booking-times__label">Available Times <span id="selectedDateLabel"></span></p>
+              <div class="time-slots" id="timeSlots">
+                <p class="time-placeholder">Select a date to see available times</p>
+              </div>
+            </div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn--ghost" id="bBack2">← Back</button>
+            <button class="btn btn--primary" id="bNext2" disabled>Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: DETAILS FORM -->
+        <div class="booking-panel" id="bStep3">
+          <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bName">Full Name</label>
+                <input type="text" id="bName" name="name" placeholder="[Your Name]" required />
+              </div>
+              <div class="form-group">
+                <label for="bEmail">Email Address</label>
+                <input type="email" id="bEmail" name="email" placeholder="[your@email.com]" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="bReddit">Reddit Username (optional)</label>
+              <input type="text" id="bReddit" name="reddit" placeholder="u/yourusername" />
+            </div>
+            <div class="form-group">
+              <label for="bGoal">What do you want to achieve on Reddit?</label>
+              <select id="bGoal" name="goal" required>
+                <option value="">Select your main goal...</option>
+                <option value="leads">Generate inbound leads</option>
+                <option value="brand">Build personal brand</option>
+                <option value="traffic">Drive website traffic</option>
+                <option value="community">Grow a community</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bContext">Anything I should know before the call?</label>
+              <textarea id="bContext" name="context" rows="3" placeholder="Current Reddit situation, biggest challenge, what you've tried..."></textarea>
+            </div>
+          </form>
+          <div class="booking-nav">
+            <button class="btn btn--ghost" id="bBack3">← Back</button>
+            <button class="btn btn--primary" id="bNext3">Review Booking →</button>
+          </div>
+        </div>
+
+        <!-- STEP 4: CONFIRM -->
+        <div class="booking-panel" id="bStep4">
+          <div class="booking-confirm">
+            <div class="confirm-summary" id="confirmSummary"></div>
+            <div class="confirm-note">
+              <p>📧 A confirmation email will be sent to your inbox. I'll reach out with the video call link 24 hours before your session.</p>
+            </div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn--ghost" id="bBack4">← Edit Details</button>
+            <button class="btn btn--primary" id="bSubmit">Confirm Booking ✓</button>
+          </div>
+          <div class="form-msg" id="bookingMsg"></div>
+        </div>
+
+        <!-- STEP 5: PAYMENT (strategy session only) -->
+        <div class="booking-panel" id="bStep5">
+          <div class="payment-box">
+            <div class="payment-box__header">
+              <span class="payment-box__icon">💳</span>
+              <div>
+                <h3>Complete Payment</h3>
+                <p>Secure your Deep Dive Strategy Session</p>
+              </div>
+            </div>
+            <div class="payment-box__summary">
+              <div class="payment-row">
+                <span>Deep Dive Strategy Session</span>
+                <span>₹2,999</span>
+              </div>
+              <div class="payment-row payment-row--total">
+                <span>Total</span>
+                <span class="accent">₹2,999</span>
+              </div>
+            </div>
+            <div class="payment-box__perks">
+              <span>✅ 45-min video call</span>
+              <span>✅ Full subreddit strategy</span>
+              <span>✅ 30-day content plan</span>
+              <span>✅ Hook frameworks</span>
+            </div>
+            <button class="btn btn--primary btn--full btn--lg" id="bPayNow">
+              <span>🔒</span> Pay ₹2,999 Securely
+            </button>
+            <p class="payment-box__note">Powered by Razorpay · UPI, Cards, Net Banking accepted</p>
+            <div class="form-msg" id="paymentMsg"></div>
+          </div>
+          <div class="booking-nav" style="margin-top:16px">
+            <button class="btn btn--ghost" id="bBack5">← Back to Confirm</button>
+          </div>
+        </div>
+
+        <!-- STEP 6: SUCCESS -->
+        <div class="booking-panel" id="bStep6">
+          <div class="booking-success">
+            <div class="booking-success__icon">🎉</div>
+            <h3>You're booked!</h3>
+            <p>Your session request has been sent. Check your email — I'll confirm within a few hours and send the video call link before your session.</p>
+            <div class="booking-success__summary" id="successSummary"></div>
+            <a href="#" class="btn btn--primary" onclick="resetBooking(); return false;">Book Another Session</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section__eyebrow">Get In Touch</p>
+          <h2 class="section__title">Have a Question? <span class="accent">Let's Talk.</span></h2>
+          <p>Whether you're curious about a service, want to collaborate, or just want to geek out about Reddit strategy — my inbox is open.</p>
+          <div class="contact__links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link__icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://reddit.com" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link__icon">r/</span>
+              <span>Reddit</span>
+            </a>
+            <a href="https://quora.com" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link__icon">Q</span>
+              <span>Quora</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+          <input type="hidden" name="from_name" value="Reddit Strategist Site" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" placeholder="[Your Name]" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="[your@email.com]" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" name="message" rows="5" placeholder="Tell me about your Reddit goals..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <div class="form-msg" id="contactMsg2"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">r/<span>strategist</span></a>
+        <p>Authenticity over Ads. High-Value Engagement. Reddit-native growth for founders and creators.</p>
+        <div class="footer__socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://reddit.com" target="_blank" rel="noopener" aria-label="Reddit">r/</a>
+          <a href="https://quora.com" target="_blank" rel="noopener" aria-label="Quora">Q</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <a href="#services">Reddit Growth Strategy</a>
+        <a href="#services">Brand Positioning</a>
+        <a href="#services">Community Audits</a>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#work">Case Studies</a>
+        <a href="#audit">Free Audit</a>
+        <a href="#book">Book a Call</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://reddit.com" target="_blank" rel="noopener">Reddit</a>
+        <a href="https://quora.com" target="_blank" rel="noopener">Quora</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Reddit Strategist. All rights reserved.</p>
+        <p>Built with strategy, not shortcuts.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
